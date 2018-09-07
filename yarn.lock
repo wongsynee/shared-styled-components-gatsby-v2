@@ -4454,11 +4454,11 @@ gatsby-plugin-react-helmet@next:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-styled-components@^2.0.11:
-  version "2.0.11"
-  resolved "http://registry.npmjs.org/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-2.0.11.tgz#c3d3438c7970bbcc116e821fb966687098bdaf57"
+gatsby-plugin-styled-components@^3.0.0-rc.1:
+  version "3.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.0.0-rc.1.tgz#c6f706e31ebaab88c711907e9a14d959086e815e"
   dependencies:
-    babel-runtime "^6.26.0"
+    "@babel/runtime" "^7.0.0"
 
 gatsby-plugin-typescript@^1.4.20:
   version "1.4.20"
@@ -6821,6 +6821,10 @@ normalize-path@^2.0.0, normalize-path@^2.0.1, normalize-path@^2.1.1:
 normalize-range@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
+
+normalize-scss@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/normalize-scss/-/normalize-scss-7.0.1.tgz#74485e82bb5d0526371136422a09fdb868ffc1a4"
 
 normalize-selector@^0.2.0:
   version "0.2.0"
@@ -9246,6 +9250,10 @@ sass-loader@^7.1.0:
     neo-async "^2.5.0"
     pify "^3.0.0"
     semver "^5.5.0"
+
+sass-mq@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/sass-mq/-/sass-mq-5.0.0.tgz#7e8a8eb0f289591b3521549266f0ff923772809d"
 
 sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
