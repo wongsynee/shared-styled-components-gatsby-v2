@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const MainStyled = styled.main`
-    background-color: #ab46bd;
-    color: #fff;
-    padding: 30px;
+  background-color: #ab46bd;
+  color: #fff;
+  padding: 30px;
 `

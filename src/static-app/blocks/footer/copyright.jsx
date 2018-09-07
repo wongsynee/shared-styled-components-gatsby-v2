@@ -1,12 +1,13 @@
-import * as React from 'react';
-import { CopyrightStyled } from './styles';
+import * as React from 'react'
+import { CopyrightStyled } from './styles'
 
 const Copyright = (props) => {
-    return(
-        <CopyrightStyled>
-            {props.text}
-        </CopyrightStyled>
-    );
-};
+  const content = props
+  return (
+    <CopyrightStyled>
+      {content.text}
+    </CopyrightStyled>
+  )
+}
 
-export default Copyright;
+export default Copyright

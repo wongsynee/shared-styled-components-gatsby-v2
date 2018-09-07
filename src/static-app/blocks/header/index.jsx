@@ -1,15 +1,14 @@
-import * as React from 'react';
-import Button from '../../../shared-components/button';
-import { HeaderStyled } from './styles';
-
+import * as React from 'react'
+import Button from '../../../shared-components/button'
+import { HeaderStyled } from './styles'
 
 const Header = (props) => {
-    return(
-        <HeaderStyled>
-            Header
-            <Button text="Log in" />
-        </HeaderStyled>
-    );
-};
+  return (
+    <HeaderStyled>
+      Header
+      <Button text="Log in" />
+    </HeaderStyled>
+  )
+}
 
-export default Header;
+export default Header
