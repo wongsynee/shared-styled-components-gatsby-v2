@@ -1,0 +1,41 @@
+
+// ===============================================
+//
+// Functions
+//
+// ===============================================
+
+@function getMapValue($map, $key) {
+    @if map-has-key($map, $key) {
+        @return map-get($map, $key);
+    }
+    @else {
+        @error "Error: \"#{$key}\" does not exist in the #{$map} variable map.";
+    }
+}
+
+// Return z-index value
+// @param {string} $layer - the z-index layer value you want to retrieve
+// @return {int}
+// @example
+//     .test {
+//         z-index: get-z("modal");
+//     }
+@function get-z($layer) {
+    @return getMapValue($zindex-layers, $layer);
+}
+
+// Will return true for: 0, 1px, 1rem
+@function is-number($value) {
+    @return type-of($value) == "number";
+}
+
+// Return font size
+@function font-size($key) {
+    @return getMapValue($font-sizes, $key);
+}
+
+// Return line-height
+@function line-height($key) {
+    @return getMapValue($line-heights, $key);
+}

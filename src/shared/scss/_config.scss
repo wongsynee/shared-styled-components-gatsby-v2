@@ -1,0 +1,18 @@
+// Settings (variables)
+// Global settings shared across entire project
+
+@import "01_settings/breakpoints";
+@import "01_settings/colours";
+@import "01_settings/fonts";
+@import "01_settings/general";
+@import "01_settings/padding";
+@import "01_settings/z-index";
+
+// Tools
+// Globally used mixins and functions. No CSS is output.
+// Any mixin or function that does not need accessing globally should belong
+// in the partial to which it relates.
+@import "02_tools/functions";
+
+// sass-mq needs to be at the bottom
+@import "sass-mq/mq";

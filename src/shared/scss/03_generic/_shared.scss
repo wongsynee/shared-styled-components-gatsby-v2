@@ -1,0 +1,24 @@
+// ===============================================
+//
+// SHARED RESETS
+//
+// ===============================================
+
+// A. More sensible default box sizing.
+//    Resource: css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+
+
+// 1. This sets 1rem = 10px.
+//    Resource: http://snook.ca/archives/html_and_css/font-size-with-rem
+html {
+    height: 100%;
+    box-sizing: border-box; // [A]
+    text-size-adjust: 100%;
+    font-size: 62.5%; // [1]
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; // [A]
+}

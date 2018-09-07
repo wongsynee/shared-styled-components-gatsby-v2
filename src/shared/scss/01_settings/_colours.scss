@@ -1,0 +1,24 @@
+// Colors
+// -------------------------------------------
+//
+// For naming, read: http://davidwalsh.name/sass-color-variables-dont-suck
+// Naming generator: http://chir.ag/projects/name-that-color/
+//
+// Don't make up or use generic names. i.e. color__red, color_my-cool-color
+// Though you might want to associate a few simple colors for reference.
+//
+// Also, use @value along with :export to get access to CSS vars in JS.
+// https://github.com/css-modules/css-modules/issues/86
+// For example: @value colorFlushOrange "#{$color__flush-orange}";
+//
+
+/* stylelint-disable color-no-hex */
+
+// Primary
+// -------------------------------------------
+$color__purple-heart: #7226e0;
+
+// Secondary
+// -------------------------------------------
+
+/* stylelint-enable color-no-hex */

@@ -29,10 +29,11 @@ module.exports = function(env) {
   })()
 
   return {
+    mode: devMode ? 'development' : 'production',
     entry: {
       'hesta-mol': [
         '@babel/polyfill',
-        './src/hesta-mol/index.js',
+        './src/hesta-mol/index.tsx',
       ],
     },
     output: {
@@ -54,7 +55,7 @@ module.exports = function(env) {
         new UglifyJSPlugin({
           cache: true,
           parallel: true,
-          sourceMap: true // set to true if you want JS source maps
+          sourceMap: devMode // set to true if you want JS source maps
         }),
         new OptimizeCSSAssetsPlugin({})
       ],
@@ -65,7 +66,7 @@ module.exports = function(env) {
     module: {
       rules: [
         {
-          test: /\.(js|jsx)?$/,
+          test: /\.(js|jsx|ts|tsx)?$/,
           include: /src/,
           exclude: /node_modules/,
           use: 'babel-loader',
@@ -122,7 +123,7 @@ module.exports = function(env) {
       alias: {
         modernizr$: path.resolve(__dirname, '.modernizr-config.json'),
       },
-      extensions: ['.js', '.jsx'],
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
       modules: [
         'src',
         'node_modules',

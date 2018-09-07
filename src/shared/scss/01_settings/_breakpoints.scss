@@ -1,0 +1,38 @@
+
+// ===============================================
+//
+// BREAKPOINTS
+//
+// Uses Guardian MQ mixin to manage Media Queries
+// @source: https://github.com/sass-mq/sass-mq
+//
+// Usage:
+// 		.my-class {
+// 			...
+//
+// 			@include mq($from: "tablet") {
+// 				...
+// 			}
+// 		}
+//
+// ===============================================
+
+/* stylelint-disable unit-blacklist */
+
+// TODO: update to match HESTA MOL design
+
+// Global breakpoint sizes used in @mixin mq()
+// @group Layout
+// @link https://github.com/sass-mq/sass-mq
+//
+//   small = [Used on the awkward sized mobile devices. Design decision.]
+//  tablet = Bootstrap -md- [If updating this, change in /src/styleguide/partials/picture.hbs (minus 1px, e.g. 768 becomes 767)]
+// desktop = Bootstrap -lg- [desktop]
+$mq-breakpoints: (
+    "small"  : 500px,
+    "tablet" : 768px,
+    "desktop": 992px,
+    "large"  : 1200px,
+);
+
+/* stylelint-enable */

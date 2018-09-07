@@ -1,0 +1,85 @@
+
+// ===============================================
+//
+// Display utility classes
+//
+// - Manipulate an elements display properties
+//
+// NOTE: We have to escape the @ symbol in classnames
+//
+// ===============================================
+:global {
+    // Hide visually and from screen readers, but maintain layout
+    .u-visually-hidden {
+        visibility: hidden !important;
+    }
+
+    // Hide visually and from screen readers
+    .u-display-none {
+        display: none !important;
+    }
+
+    // Hide on mobile.
+    .u-hidden\@mobile {
+        @include mq($until: "tablet") {
+            display: none !important;
+        }
+    }
+
+    // Hide on tablet
+    .u-hidden\@tablet {
+        @include mq($from: "tablet", $until: "desktop") {
+            display: none !important;
+        }
+    }
+
+    // Hide from tablet upwards
+    .u-hidden\@from-tablet {
+        @include mq($from: "tablet") {
+            display: none !important;
+        }
+    }
+
+    // Hide until desktop
+    .u-hidden\@until-desktop {
+        @include mq($until: "desktop") {
+            display: none !important;
+        }
+    }
+
+    // Hide from desktop
+    .u-hidden\@from-desktop {
+        @include mq($from: "desktop") {
+            display: none !important;
+        }
+    }
+
+    // Hide only visually, but have it available for screen readers
+    //
+    // 1. For long content, line feeds are not interpreted as spaces and
+    //    small width causes content to wrap 1 word per line:
+    //    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+    // 2. Prevent voice over mac from reading styled uppercase as abbreviations
+    //    Eg. ADD as A, D, D... should be 'add' || US as U, S... should be 'us'
+    .u-sr-only {
+        position: absolute;
+        width: .1rem;
+        height: .1rem;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        clip-path: inset(50%);
+        border: 0;
+        white-space: nowrap; // [1]
+        text-transform: none; // [2]
+    }
+
+    // Prevent wrapping of text
+    //
+    // @example
+    //     AustralianSuper <span class="u-no-wrap">ABN: 99 999 999 999</span>
+    .u-no-wrap {
+        white-space: nowrap;
+    }
+}
