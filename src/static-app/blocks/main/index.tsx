@@ -4,7 +4,7 @@ import H2 from '../../../shared-components/typography/h2'
 import H3 from '../../../shared-components/typography/h3'
 import { MainStyled } from './styles'
 
-const Main = (props) => {
+const Main = (props: any) => {
   return (
     <MainStyled>
       <H1>Heading 1</H1>

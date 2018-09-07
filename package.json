@@ -22,7 +22,8 @@
     "react-cosmos": "^4.6.4",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
-    "sass-mq": "^5.0.0"
+    "sass-mq": "^5.0.0",
+    "ts-loader": "^5.0.0"
   },
   "keywords": [
     "gatsby"

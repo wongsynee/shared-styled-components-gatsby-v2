@@ -2,7 +2,7 @@ import * as React from 'react'
 import Copyright from './copyright'
 import { FooterStyled } from './styles'
 
-const Footer = (props) => {
+const Footer = (props: any) => {
   return (
     <FooterStyled>
       Footer

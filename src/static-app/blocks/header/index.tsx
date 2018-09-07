@@ -2,7 +2,7 @@ import * as React from 'react'
 import Button from '../../../shared-components/button'
 import { HeaderStyled } from './styles'
 
-const Header = (props) => {
+const Header = (props: any) => {
   return (
     <HeaderStyled>
       Header
